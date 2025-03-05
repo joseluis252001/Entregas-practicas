@@ -10,7 +10,6 @@
 
 Con el docente Jonathan estoy aprendiendo el uso de github, html, css y js.
 
-
 ---
 
 ### Sistemas Operativos y Redes
