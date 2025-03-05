@@ -2,3 +2,5 @@
 
 
 [ Practica-5](practica-5.md)
+
+[ Practica-6](practica-6.md)
