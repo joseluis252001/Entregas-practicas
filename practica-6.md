@@ -33,3 +33,10 @@ Aprendesmos el lenguahe java script.
 #### Fernando Garcia
 
 Hacemos un juego de android.
+### Sistemas operativosa y redes
+
+#### Alcides Albora
+
+La introduccion a linux y hacer un servidor privado.
+
+---
