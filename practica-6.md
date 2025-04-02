@@ -2,7 +2,9 @@
 
 ## Jose Luis Quijas Olmedo
 
-### Diseño de videojuegos
+### Principios de composicion y diseño
+
+---
 
 #### Ana Olivar
 
