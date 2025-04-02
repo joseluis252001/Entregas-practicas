@@ -2,10 +2,10 @@
 
 ## Jose Luis Quijas Olmedo
 
-### Principios de composicion y diseño
+### Programacion en lenguajes interpretados
 
-#### Ana Chaparro
+#### Jonathan MirCha
 
-Esta materia es para para aprender illustrador.
+Aprendemos el lenguaje java script.
 
 ---
