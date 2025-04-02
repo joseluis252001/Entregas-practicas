@@ -2,21 +2,12 @@
 
 ## Jose Luis Quijas Olmedo
 
-
 ### Principios de composicion y diseño
 
 ---
 
-#### Ana Olivar
+#### Ana Chaparro
 
-Esta materia no sayuda a diseñar los niveles de los videojugos.
-
----
-
-### Ingles tecnico para videjuegos iv
-
-#### Jorge 
-
-Aprendemos a vender nuestros productos en la industria.
+Esta materia es para para aprender illustrador.
 
 ---
