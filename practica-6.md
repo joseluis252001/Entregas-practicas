@@ -6,7 +6,7 @@
 
 #### Jonathan MirCha
 
-Aprendesmos el lenguahe java script.
+Aprendesmos el lenguaje java script.
 
 ---
 
