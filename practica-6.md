@@ -41,11 +41,3 @@ Aprendesmos el lenguahe java script.
 Hacemos un juego de android.
 
 ---
-
-### Sistemas operativosa y redes
-
-#### Alcides Albora
-
-Introduccion a linux y hacer un servidor privado.
-
----
