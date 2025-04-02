@@ -6,6 +6,14 @@
 
 #### Jonathan MirCha
 
-Aprendemos el lenguaje java script.
+Aprendesmos el lenguahe java script.
+
+---
+
+### Proyecto semestral : Desarrollo de aplicaciones interactivas
+
+#### Fernando Garcia
+
+Hacemos un juego de android.
 
 ---
