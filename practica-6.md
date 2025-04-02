@@ -2,6 +2,8 @@
 
 ## Jose Luis Quijas Olmedo
 
+---
+
 ### Programacion en lenguajes interpretados
 
 #### Jonathan MirCha
