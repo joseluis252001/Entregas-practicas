@@ -2,16 +2,6 @@
 
 ## Jose Luis Quijas Olmedo
 
-
-
-
-
-
-
-
-
-
-
 ### Ingles tecnico para videjuegos iv
 
 #### Jorge 
