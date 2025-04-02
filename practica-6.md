@@ -2,23 +2,6 @@
 
 ## Jose Luis Quijas Olmedo
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Principios de composicion y diseño
 
 ---
