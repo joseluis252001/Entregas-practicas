@@ -13,6 +13,12 @@ Esta materia no sayuda a diseñar los niveles de los videojugos.
 
 #### Jorge 
 
+---
+
+### Principios de composicion y diseño
+
+#### Ana Chaparro
+
 Aprendemos a vender nuestros productos en la industria.
 
 ---
