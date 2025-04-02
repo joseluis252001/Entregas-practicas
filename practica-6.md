@@ -4,7 +4,6 @@
 
 ### Diseño de videojuegos
 
----
 
 #### Ana Olivar
 
