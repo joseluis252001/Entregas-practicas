@@ -28,3 +28,8 @@ Esta materia es para para aprender illustrador.
 ### Programacion en lenguajes interpretados
 
 Aprendesmos el lenguahe java script.
+### Proyecto semestral : Desarrollo de aplicaciones interactivas
+
+#### Fernando Garcia
+
+Hacemos un juego de android.
