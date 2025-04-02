@@ -6,6 +6,6 @@
 
 #### Alcides Albora
 
-Introduccion a linux y hacer un servidor privado.
+La introduccion a linux y hacer un servidor privado.
 
 ---
