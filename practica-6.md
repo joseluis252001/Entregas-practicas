@@ -4,8 +4,6 @@
 
 ### Diseño de videojuegos
 
----
-
 #### Ana Olivar
 
 Esta materia no sayuda a diseñar los niveles de los videojugos.
