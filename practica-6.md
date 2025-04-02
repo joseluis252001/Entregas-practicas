@@ -13,12 +13,18 @@ Esta materia no sayuda a diseñar los niveles de los videojugos.
 
 #### Jorge 
 
+Aprendemos a vender nuestros productos en la industria.
+
 ---
 
 ### Principios de composicion y diseño
 
 #### Ana Chaparro
 
-Aprendemos a vender nuestros productos en la industria.
+Esta materia es para para aprender illustrador.
 
 ---
+
+### Programacion en lenguajes interpretados
+
+Aprendesmos el lenguahe java script.
