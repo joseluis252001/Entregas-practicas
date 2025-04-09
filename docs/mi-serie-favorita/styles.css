@@ -1,0 +1,172 @@
+/* ===================================
+   Esta notas son para mi yo del futuro si llego a olvidar que es cada cosa del css para el indes.HTML
+   tambien para tener una mejor guía puedo consultar esta pagina y canal youtube.
+
+   https://jonmircha.com/html
+
+   https://www.youtube.com/watch?v=K3xmRF8ab1o
+   =================================== */
+
+/* 1. Define el tamaño de letra raiz del HTML (100% = 16px aprox)*/
+html {
+    font-size: 100%;
+  }
+  
+  /* 1. Define el tamaño base del texto dentro del body */
+  body {
+    font-size: 1rem;
+  }
+  
+  /* 2. Aplica box-sizing: border-box a todos los elementos
+     Esto hace que el padding y border no sumen al ancho total */
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* ===================================
+     Fuente y colores globales
+     =================================== */
+  
+  /* 3. Importa una fuente desde Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  
+  /* 4. Estilos base del cuerpo del sitio */
+  body {
+    font-family: 'Roboto', sans-serif; /* Aplica la fuente importada */
+    background-color: #1c1c1c; /* Fondo oscuro */
+    color: #f0f0f0; /* Texto claro */
+  }
+  
+  /* 5. Color de texto de los enlaces normales */
+  a {
+    color: #00d1ff;
+    text-decoration: none;
+  }
+  
+  /* 6. Color de texto de los enlaces cuando pasas el mouse encima */
+  a:hover {
+    color: #ff4081;
+    text-decoration: underline;
+  }
+  
+  /* 7. Hace que todas las imagenes sean responsivas
+     (se ajusten al tamaño del contenedor) */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* ===================================
+     Variables personalizadas
+     =================================== */
+  
+  /* 8. Define variables CSS reutilizables */
+  :root {
+    --color-principal: #ff3c00;
+    --color-secundario: #00c853;
+    --espaciado: 16px;
+  }
+  
+  /* Uso de variables en h1 (titulo principal) */
+  h1 {
+    color: var(--color-principal);
+    margin-bottom: var(--espaciado);
+  }
+  
+  /* Uso de variables en el pie de pagina */
+  footer {
+    background-color: var(--color-secundario);
+    padding: var(--espaciado);
+    text-align: center;
+  }
+  
+  /* ===================================
+     Selectores de ID (navegación por secciones)
+     =================================== */
+  
+  /* 9. Aplica estilos especificos a secciones usando sus IDs */
+  #inicio {
+    padding: 20px;
+    background-color: #222;
+  }
+  
+  #acerca {
+    padding: 20px;
+    background-color: #2a2a2a;
+  }
+  
+  #medios {
+    padding: 20px;
+    background-color: #333;
+  }
+  
+  /* ===================================
+     Clases reutilizables
+     =================================== */
+  
+  /* 10. Tarjetas de personajes (con borde y espacio) */
+  .tarjeta {
+    border: 1px solid #555;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #262626;
+  }
+  
+  /* 10. Estilo para destacar imagenes de tipo "poster" */
+  .poster {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* 10. Botones estilizados con color y borde redondeado */
+  .btn {
+    background-color: var(--color-principal);
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* ===================================
+     Selectores descendientes
+     =================================== */
+  
+  /* 11. Estilo para items dentro del menú de navegacion */
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  /* 11. Texto dentro de los artículos de seccion */
+  section article p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  /* 11. Texto dentro del pie de pagina */
+  footer p {
+    font-style: italic;
+  }
+  
+  /* ===================================
+     Selectores de grupo
+     =================================== */
+  
+  /* 12. Aplica negrita a todos los titulos h1, h2, h3 */
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  
+  /* 12. Añade espacio a listas ordenadas y desordenadas */
+  ul, ol {
+    padding-left: 20px;
+  }
+  
+  /* 12. Estilo basico para tablas */
+  table, th, td {
+    border: 1px solid #777;
+    border-collapse: collapse;
+    padding: 6px;
+  }
+  
