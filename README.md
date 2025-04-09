@@ -7,3 +7,5 @@
 [ Practica-7](Practica-7.md)
 
 [ Practica-8](Practica-8.md)
+
+[Mi serie favorita](https://github.com/joseluis252001/Entregas-practicas/tree/main/docs/mi-serie-favorita)
