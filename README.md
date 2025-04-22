@@ -8,4 +8,4 @@
 
 [ Practica-8](Practica-8.md)
 
-[Mi serie favorita](https://github.com/joseluis252001/Entregas-practicas/tree/main/docs/mi-serie-favorita)
+[Mi serie favorita](https://github.com/joseluis252001/entregas-practicas/tree/main/docs/mi-serie-favorita)
