@@ -1,0 +1,61 @@
+/* ... Mantengo tus notas, imports y configuraciones iniciales ... */
+
+/* Añadimos contenedor general */
+.contenedor {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Por defecto (móvil) → 1 columna */
+.contenedor {
+  grid-template-columns: 1fr;
+}
+
+/* Estilo general de las secciones */
+.contenedor section {
+  background-color: #2a2a2a;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+/* Estilo especial para tarjetas */
+.tarjeta {
+  background-color: #262626;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  margin: 8px 0;
+}
+
+/* Media Query para pantallas de tablet y computadoras */
+@media screen and (min-width: 768px) {
+  .contenedor {
+      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+/* Media Query para pantallas grandes (escritorios grandes) */
+@media screen and (min-width: 1024px) {
+  .contenedor {
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  }
+}
+
+/* Galería de imágenes y video (Acerca) */
+.galeria {
+  display: grid;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .galeria {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .galeria {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
