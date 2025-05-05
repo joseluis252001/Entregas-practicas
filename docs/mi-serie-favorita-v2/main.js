@@ -1,5 +1,5 @@
-// Prompt usado: "Add a responsive hamburger menu using JavaScript"
 
+// Prompt usado: "Add a responsive hamburger menu using JavaScript"
 document.addEventListener("DOMContentLoaded", function () {
     const toggleBtn = document.createElement("button");
     toggleBtn.innerText = "☰";
@@ -11,11 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     toggleBtn.addEventListener("click", () => {
         nav.classList.toggle("activo");
     });
-});
 
-// Prompt usado: "Toggle dark/light mode with a button using JavaScript"
-
-document.addEventListener("DOMContentLoaded", () => {
+    // Prompt usado: "Toggle dark/light mode with a button using JavaScript"
     const modoBtn = document.createElement("button");
     modoBtn.innerText = "🌙";
     modoBtn.classList.add("modo-toggle");

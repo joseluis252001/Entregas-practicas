@@ -1,25 +1,46 @@
-/* ... Mantengo tus notas, imports y configuraciones iniciales ... */
+/* Estilos globales */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  color: #1a1a1a;
+}
 
-/* Añadimos contenedor general */
+body.oscuro {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+body.oscuro .contenedor section {
+  background-color: #333;
+}
+
+body.oscuro .tarjeta {
+  background-color: #444;
+  border: 1px solid #777;
+}
+
+/* Responsive Grid */
 .contenedor {
   display: grid;
   gap: 16px;
   padding: 16px;
-}
-
-/* Por defecto (móvil) → 1 columna */
-.contenedor {
   grid-template-columns: 1fr;
 }
 
-/* Estilo general de las secciones */
-.contenedor section {
-  background-color: #2a2a2a;
-  padding: 16px;
-  border-radius: 8px;
+@media screen and (min-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-/* Estilo especial para tarjetas */
+@media screen and (min-width: 1024px) {
+  .contenedor {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tarjetas */
 .tarjeta {
   background-color: #262626;
   padding: 12px;
@@ -28,21 +49,7 @@
   margin: 8px 0;
 }
 
-/* Media Query para pantallas de tablet y computadoras */
-@media screen and (min-width: 768px) {
-  .contenedor {
-      grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-  }
-}
-
-/* Media Query para pantallas grandes (escritorios grandes) */
-@media screen and (min-width: 1024px) {
-  .contenedor {
-      grid-template-columns: repeat(3, 1fr); /* 3 columnas */
-  }
-}
-
-/* Galería de imágenes y video (Acerca) */
+/* Galería */
 .galeria {
   display: grid;
   gap: 8px;
@@ -50,67 +57,69 @@
 
 @media screen and (min-width: 768px) {
   .galeria {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
   .galeria {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Navbar y toggle */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-toggle {
+  background-color: #333;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul.activo {
+    display: flex;
   }
 
   .menu-toggle {
-    background-color: #333;
-    color: white;
-    font-size: 1.5rem;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    display: none;
+    display: block;
   }
-  
-  @media (max-width: 768px) {
-    nav ul {
-      display: none;
-      flex-direction: column;
-    }
-  
-    nav ul.activo {
-      display: flex;
-    }
-  
-    .menu-toggle {
-      display: block;
-    }
-  }
-  
+}
 
-  .modo-toggle {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 1.5rem;
-    padding: 10px;
-    border: none;
-    border-radius: 50%;
-    background: #333;
-    color: white;
-    cursor: pointer;
-    z-index: 100;
-  }
-  
-  body.oscuro {
-    background-color: #1a1a1a;
-    color: #f5f5f5;
-  }
-  
-  body.oscuro .contenedor section {
-    background-color: #333;
-  }
-  
-  body.oscuro .tarjeta {
-    background-color: #444;
-    border: 1px solid #777;
-  }
-  
+/* Modo oscuro toggle */
+.modo-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  z-index: 100;
 }
