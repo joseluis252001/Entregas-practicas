@@ -1,28 +1,145 @@
-/* Estilos globales */
-body {
+/* Reset y variables */
+* {
   margin: 0;
-  padding-top: 60px; /* ← Agregado */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
-  color: #1a1a1a;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --card-bg: #ffffff;
+  --personaje-bg: #ffeaea;
+  --nav-bg: #ff6666;
+  --nav-hover: #ff3333;
+  --button-bg: #ff6666;
+  --button-hover: #ff3333;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"],
 body.oscuro {
-  background-color: #1a1a1a;
-  color: #f5f5f5;
+  --bg-color: #1a1a1a;
+  --text-color: #f1f1f1;
+  --card-bg: #1e1e1e;
+  --personaje-bg: #3a1f1f;
+  --nav-bg: #bb4444;
+  --nav-hover: #dd5555;
+  --button-bg: #bb4444;
+  --button-hover: #ff6b6b;
+  --shadow: rgba(255, 255, 255, 0.05);
 }
 
-body.oscuro .contenedor section {
-  background-color: #333;
+/* Estilo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  padding-top: 60px;
+  transition: all 0.3s ease;
 }
 
-body.oscuro .tarjeta {
-  background-color: #444;
-  border: 1px solid #777;
+header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Responsive Grid */
-.contenedor {
+header img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 6px var(--shadow));
+}
+
+/* Controles superiores */
+.top-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  padding: 1em;
+}
+
+/* Botones */
+button,
+.menu-toggle {
+  background-color: var(--button-bg);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+button:hover,
+.menu-toggle:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05);
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  background: var(--nav-bg);
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px var(--shadow);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background: var(--nav-hover);
+  transform: scale(1.05);
+}
+
+#menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+}
+
+/* Responsive: navbar */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul.activo {
+    display: flex;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+}
+
+/* Main y secciones */
+main.contenedor {
   display: grid;
   gap: 16px;
   padding: 16px;
@@ -30,24 +147,39 @@ body.oscuro .tarjeta {
 }
 
 @media screen and (min-width: 768px) {
-  .contenedor {
+  main.contenedor {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .contenedor {
+  main.contenedor {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
+section {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px var(--shadow);
+  animation: fadeIn 0.8s ease forwards;
+}
+
 /* Tarjetas */
 .tarjeta {
-  background-color: #262626;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #555;
-  margin: 8px 0;
+  background-color: var(--personaje-bg);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px var(--shadow);
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 15px var(--shadow);
 }
 
 /* Galería */
@@ -68,50 +200,79 @@ body.oscuro .tarjeta {
   }
 }
 
-/* Navbar y toggle */
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: var(--card-bg);
+  box-shadow: 0 4px 10px var(--shadow);
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.menu-toggle {
-  background-color: #333;
-  color: white;
-  font-size: 1.5rem;
-  border: none;
+th, td {
   padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: var(--button-bg);
+  color: white;
+}
+
+td {
+  background: var(--card-bg);
+}
+
+/* Botón scroll */
+#scrollToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 10px 15px;
+  font-size: 24px;
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 50%;
   cursor: pointer;
   display: none;
-  margin-bottom: 10px;
-
-  /* ← Agregado para hacerlo flotante */
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 100;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-  }
+#scrollToTop:hover {
+  background-color: #e84343;
+}
 
-  nav ul.activo {
-    display: flex;
+/* Animaciones */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .menu-toggle {
-    display: block;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
 }
