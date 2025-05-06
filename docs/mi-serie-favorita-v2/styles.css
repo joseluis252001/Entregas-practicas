@@ -99,12 +99,14 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: white;
-  background: var(--nav-bg);
+  color: #0044cc; /* Azul fuerte */
+  background-color: transparent;
   padding: 10px 15px;
-  border-radius: 8px;
+  border: 2px solid #0044cc; /* Cuadro azul alrededor */
+  border-radius: 4px;
+  font-weight: bold;
   box-shadow: 0 2px 5px var(--shadow);
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
